@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<div id="qrcode"></div>
+<head>
+    <title> Allegsu's QRS </title>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+</head>
+<div class="qrs">    
+    <div id="qr1"></div>
+    <div id="qr2"></div>
+    <div id="qr3"></div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
-  new QRCode(document.getElementById("qrcode"), {
-    text: "https://allegsumaga.github.io/a_tags/44.png",
-    width: 300,
-    height: 300
+  new QRCode(document.getElementById("qr1"), {
+    text: "https://allegsumaga.github.io/a_tags/images/44.png",
+    width: 200,
+    height: 200
+  });
+
+  new QRCode(document.getElementById("qr2"), {
+    text: "https://allegsumaga.github.io/a_tags/images/45.png",
+    width: 200,
+    height: 200
+  });
+
+  new QRCode(document.getElementById("qr3"), {
+    text: "https://allegsumaga.github.io/a_tags/images/46.png",
+    width: 200,
+    height: 200
   });
 </script>
 
